@@ -1,1 +1,1 @@
-# Web Responsive Coffee Shop
+# Coffee Shop App
