@@ -79,9 +79,9 @@
                   </span>
                 </div>
                 <div class="card-history current-history col-sm-3 d-flex justify-content-start">
-                  <div class="icon-history delete-card">
-                    <img class="delete-history" src="./asset/img/trashcan.png" alt="">
-                  </div>
+                  <button class="p-0 icon-history delete-card" type="button" data-toggle="modal" data-target="#deleteModal">
+                    <i class='fas fa-trash-alt' style='font-size:12px;color: white;'></i>
+                  </button>
                   <div class="icon-history cancel-card">
                   <img class="cancel-history"src="./asset/img/x.png" alt="">
                 </div>
@@ -181,8 +181,29 @@
   </div>
 </footer>
 
+  <!--  Modal -->
+  <div class="modal fade" id="deleteModal" style="margin-top:250px">
+    <div class="modal-dialog">
+      <div class="modal-content">
+         
+        <!-- Modal body -->
+        <div class="my-3 modal-body text-center" style="font-family: Poppins;">
+            Are you sure want to delete the selected items?
+        </div>
+     
+        <!-- Modal footer -->
+        <div class="modal-footer d-flex justify-content-center">
+          <button type="button" class="btn" data-dismiss="modal" style="font-family: Poppins; border-color: #6a4029;">Cancel</button>
+          <button type="button" class="btn" data-dismiss="modal" style="font-family: Poppins ;background-color: #6a4029; color: white;">Delete</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
 
 </body>
 </html>
